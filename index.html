@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Razvan Andrei Bugheanu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with social links, hamburger menu -->
+    <header>
+        <div class="language-toggle">
+            <button class="lang-btn" onclick="changeLanguage('en')">
+                <img src="assets/flag_en.png" alt="English flag">
+            </button>
+            <button class="lang-btn" onclick="changeLanguage('es')">
+                <img src="assets/flag_es.png" alt="Spanish flag">
+            </button>
+        </div>
+        <!-- Social buttons with icons on top-left -->
+        <div class="social-links">
+            <a href="https://github.com/Khaoss02" class="social-btn">
+                <img src="assets/github.png" alt="GitHub icon">
+            </a>
+            <a href="https://www.linkedin.com/in/andrei-bugheanu-7806231a5/" class="social-btn">
+                <img src="assets/linkedin.png" alt="LinkedIn icon">
+            </a>
+            <a href="mailto:bugheanur@gmail.com" class="social-btn">
+                <img src="assets/email.png" alt="Email icon">
+            </a>
+        </div>
+        <!-- Hamburger menu on top-right -->
+        <nav role="navigation" aria-label="Main navigation">
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+            <ul class="menu" role="menu">
+                <li><button class="menu-close" aria-label="Close navigation menu">✕</button></li>
+                <li><a href="#skills" class="nav-link" role="menuitem" aria-label="Go to Skills section"><span class="en">Skills</span><span class="es hidden">Habilidades</span></a></li>
+                <li><a href="#projects" class="nav-link" role="menuitem" aria-label="Go to Projects section"><span class="en">Projects</span><span class="es hidden">Proyectos</span></a></li>
+                <li><a href="#education" class="nav-link" role="menuitem" aria-label="Go to Education section"><span class="en">Education</span><span class="es hidden">Educación</span></a></li>
+                <li><a href="#certifications" class="nav-link" role="menuitem" aria-label="Go to Certifications section"><span class="en">Certifications</span><span class="es hidden">Certificaciones</span></a></li>
+                <li><a href="#contact" class="nav-link" role="menuitem" aria-label="Go to Contact section"><span class="en">Contact</span><span class="es hidden">Contacto</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero section with title, bio, and icon -->
+    <section class="hero">
+        <div class="header-content">
+            <div class="header-text">
+                <h1 class="glitch" data-text="Hello there! I'm Andrei.">Hello there! I'm Andrei.</h1>
+                <p class="bio"><span class="en">I’m Andrei Bugheanu, a developer passionate about technology and continuous learning. I enjoy tackling challenges with creativity, working in teams, and turning ideas into useful, innovative solutions.</span><span class="es hidden">Soy Andrei Bugheanu, un desarrollador apasionado por la tecnología y el aprendizaje continuo. Disfruto enfrentar desafíos con creatividad, trabajar en equipo y convertir ideas en soluciones útiles e innovadoras.</span></p>
+            </div>
+            <img src="assets/programming-icon.png" alt="Programming icon representing code and development" class="header-icon" loading="lazy">
+        </div>
+    </section>
+    <main id="main-content">
+        <!-- Combined Skills section -->
+        <section id="skills" class="skills fade-in">
+            <h2 class="section-title"><span class="en">Skills</span><span class="es hidden">Habilidades</span></h2>
+            <div class="soft-skills">
+                <h3 class="subsection-title"><span class="en">Soft Skills</span><span class="es hidden">Habilidades Blandas</span></h3>
+                <div class="soft-skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <span class="en">Organization</span><span class="es hidden">Organización</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-comments" aria-hidden="true"></i>
+                        <span class="en">Communication</span><span class="es hidden">Comunicación</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-users" aria-hidden="true"></i>
+                        <span class="en">Teamwork</span><span class="es hidden">Trabajo en Equipo</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                        <span class="en">Problem-Solving</span><span class="es hidden">Resolución de Problemas</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                        <span class="en">Adaptability</span><span class="es hidden">Adaptabilidad</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-clock" aria-hidden="true"></i>
+                        <span class="en">Punctuality</span><span class="es hidden">Puntualidad</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-hand-holding-heart" aria-hidden="true"></i>
+                        <span class="en">Responsibility</span><span class="es hidden">Responsabilidad</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <span class="en">Perfectionism</span><span class="es hidden">Perfeccionismo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="technical-skills">
+                <h3 class="subsection-title"><span class="en">Technical Skills</span><span class="es hidden">Habilidades Técnicas</span></h3>
+                <div class="skill-categories">
+                    <h4><i class="fas fa-code" aria-hidden="true"></i><span class="en">Languages</span><span class="es hidden">Idiomas</span></h4>
+                    <div class="skill-badges-grid">
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">Java</span><span class="es hidden">Java</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">JavaScript</span><span class="es hidden">JavaScript</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">C#</span><span class="es hidden">C#</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">HTML</span><span class="es hidden">HTML</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">CSS</span><span class="es hidden">CSS</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">JSON</span><span class="es hidden">JSON</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">XSL</span><span class="es hidden">XSL</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">SQL</span><span class="es hidden">SQL</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">XML</span><span class="es hidden">XML</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">Python</span><span class="es hidden">Python</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">PHP</span><span class="es hidden">PHP</span></span>
+                        <span class="skill-badge"><i class="fas fa-language" aria-hidden="true"></i><span class="en">Visual Basic .NET</span><span class="es hidden">Visual Basic .NET</span></span>
+                    </div>
+                    <h4><i class="fas fa-cogs" aria-hidden="true"></i><span class="en">Development Environments</span><span class="es hidden">Entornos de Desarrollo</span></h4>
+                    <div class="skill-badges-grid">
+                        <span class="skill-badge"><i class="fas fa-desktop" aria-hidden="true"></i><span class="en">Eclipse</span><span class="es hidden">Eclipse</span></span>
+                        <span class="skill-badge"><i class="fas fa-desktop" aria-hidden="true"></i><span class="en">Visual Studio 2022</span><span class="es hidden">Visual Studio 2022</span></span>
+                        <span class="skill-badge"><i class="fas fa-desktop" aria-hidden="true"></i><span class="en">Visual Studio Code</span><span class="es hidden">Visual Studio Code</span></span>
+                        <span class="skill-badge"><i class="fas fa-database" aria-hidden="true"></i><span class="en">HeidiSQL</span><span class="es hidden">HeidiSQL</span></span>
+                        <span class="skill-badge"><i class="fas fa-database" aria-hidden="true"></i><span class="en">Oracle</span><span class="es hidden">Oracle</span></span>
+                        <span class="skill-badge"><i class="fas fa-database" aria-hidden="true"></i><span class="en">MongoDB</span><span class="es hidden">MongoDB</span></span>
+                    </div>
+                    <h4><i class="fas fa-tools" aria-hidden="true"></i><span class="en">Other</span><span class="es hidden">Otros</span></h4>
+                    <div class="skill-badges-grid">
+                        <span class="skill-badge"><i class="fab fa-git-alt" aria-hidden="true"></i><span class="en">Git</span><span class="es hidden">Git</span></span>
+                        <span class="skill-badge"><i class="fab fa-github" aria-hidden="true"></i><span class="en">GitHub</span><span class="es hidden">GitHub</span></span>
+                        <span class="skill-badge"><i class="fas fa-leaf" aria-hidden="true"></i><span class="en">Laravel</span><span class="es hidden">Laravel</span></span>
+                        <span class="skill-badge"><i class="fas fa-leaf" aria-hidden="true"></i><span class="en">Symfony 5</span><span class="es hidden">Symfony 5</span></span>
+                        <span class="skill-badge"><i class="fas fa-leaf" aria-hidden="true"></i><span class="en">Spring</span><span class="es hidden">Spring</span></span>
+                        <span class="skill-badge"><i class="fas fa-sitemap" aria-hidden="true"></i><span class="en">UML</span><span class="es hidden">UML</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects section with filtering buttons -->
+        <section id="projects" class="projects fade-in">
+            <h2 class="section-title"><span class="en">Projects</span><span class="es hidden">Proyectos</span></h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterProjects('all')" aria-pressed="true"><span class="en">All</span><span class="es hidden">Todos</span></button>
+                <button class="filter-btn" onclick="filterProjects('web')" aria-pressed="false"><span class="en">Web</span><span class="es hidden">Web</span></button>
+                <button class="filter-btn" onclick="filterProjects('mobile')" aria-pressed="false"><span class="en">Mobile</span><span class="es hidden">Móvil</span></button>
+            </div>
+            <div class="grid">
+                <!-- MegaGol (Android) -->
+                <div class="project" data-category="mobile">
+                    <h3 class="project-title"><span class="en">MegaGol</span><span class="es hidden">MegaGol</span></h3>
+                    <p class="project-desc">
+                        <span class="en">Android game for two players: shoot and save penalties.</span>
+                        <span class="es hidden">Juego Android para dos jugadores: lanzar y parar penales.</span>
+                    </p>
+                    <p><strong class="title"><span class="en">Technologies:</span><span class="es hidden">Tecnologías:</span></strong>
+                        <span class="en">Java, Android Studio, AI tools (ChatGPT, Gemini)</span><span class="es hidden">Java, Android Studio, herramientas de IA (ChatGPT, Gemini)</span>
+                    </p>
+                    <a class="project-link" href="https://github.com/Khaoss02/megagol" target="_blank" rel="noopener">
+                        <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
+                    </a>
+                </div>
+
+                <!-- Lista de la Compra (Android) -->
+                <div class="project" data-category="mobile">
+                    <h3 class="project-title"><span class="en">Shopping List</span><span class="es hidden">Lista de la Compra</span></h3>
+                    <p class="project-desc">
+                        <span class="en">Android app to create and manage shopping lists easily.</span>
+                        <span class="es hidden">App Android para crear y gestionar listas de la compra fácilmente.</span>
+                    </p>
+                    <p><strong class="title"><span class="en">Technologies:</span><span class="es hidden">Tecnologías:</span></strong>
+                        <span class="en">Java, Android Studio</span><span class="es hidden">Java, Android Studio</span>
+                    </p>
+                    <a class="project-link" href="https://github.com/GuillemFdez/LlistaCompra" target="_blank" rel="noopener">
+                        <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formal Education section -->
+        <section id="education" class="education fade-in">
+            <h2 class="section-title"><span class="en">Education</span><span class="es hidden">Educación</span></h2>
+            <div class="education-grid">
+                <article class="education-card">
+                    <i class="fas fa-graduation-cap education-icon" aria-hidden="true"></i>
+                    <h3>Institut Baix Camp</h3>
+                    <p class="education-dates">2024 – Present</p>
+                    <p class="education-desc"><span class="en">CFGS Desarrollo de Aplicaciones Multiplataforma</span><span class="es hidden">CFGS Desarrollo de Aplicaciones Multiplataforma</span></p>
+                </article>
+                <article class="education-card">
+                    <i class="fas fa-graduation-cap education-icon" aria-hidden="true"></i>
+                    <h3>Institut Julio Antonio</h3>
+                    <p class="education-dates">2020 – 2022</p>
+                    <p class="education-desc"><span class="en">Título de Bachillerato Tecnológico</span><span class="es hidden">Título de Bachillerato Tecnológico</span></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Certifications section -->
+        <section id="certifications" class="certifications fade-in">
+            <h2 class="section-title"><span class="en">Certifications</span><span class="es hidden">Certificaciones</span></h2>
+            <div class="grid">
+                <article class="cert-card">
+                    <i class="fas fa-language" aria-hidden="true"></i>
+                    <h3><span class="en">Inglés Certificado EOI C1</span><span class="es hidden">Inglés Certificado EOI C1</span></h3>
+                    <p><span class="en">Certificado de Inglés nivel C1 emitido por EOI.</span><span class="es hidden">Certificado de Inglés nivel C1 emitido por EOI.</span></p>
+                    <a href="#" target="_blank" rel="noopener" class="cert-link"><span class="en">View Certificate</span><span class="es hidden">Ver Certificado</span></a>
+                </article>
+                <article class="cert-card">
+                    <i class="fas fa-code-branch" aria-hidden="true"></i>
+                    <h3><span class="en">Certificado Curso de Git</span><span class="es hidden">Certificado Curso de Git</span></h3>
+                    <p><span class="en">Certificate for completing the Git course.</span><span class="es hidden">Certificado por completar el curso de Git.</span></p>
+                    <a href="https://drive.google.com/file/d/1yazF0azQ1lUb7XRuhOIbuNzAPdzZuwAO/view?usp=drive_link" target="_blank" rel="noopener" class="cert-link"><span class="en">View Certificate</span><span class="es hidden">Ver Certificado</span></a>
+                </article>
+                <article class="cert-card">
+                    <i class="fas fa-cloud" aria-hidden="true"></i>
+                    <h3><span class="en">Certificado Curso de Introducción a Cloud Computing</span><span class="es hidden">Certificado Curso de Introducción a Cloud Computing</span></h3>
+                    <p><span class="en">Certificate for Introduction to Cloud Computing course.</span><span class="es hidden">Certificado del curso de Introducción a Cloud Computing.</span></p>
+                    <a href="https://drive.google.com/file/d/1MQHBn70BAIPLYfkfxS-HsWMCZ8cbdP79/view?usp=drive_link" target="_blank" rel="noopener" class="cert-link"><span class="en">View Certificate</span><span class="es hidden">Ver Certificado</span></a>
+                </article>
+                <article class="cert-card">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h3><span class="en">Certificado Curso de Symfony 5: Primeros Pasos</span><span class="es hidden">Certificado Curso de Symfony 5: Primeros Pasos</span></h3>
+                    <p><span class="en">Certificate for Symfony 5: First Steps course.</span><span class="es hidden">Certificado del curso de Symfony 5: Primeros Pasos.</span></p>
+                    <a href="https://drive.google.com/file/d/17LGm_rztnOI_NgFtyiZzfJSf-NZT2PNh/view?usp=drive_link" target="_blank" rel="noopener" class="cert-link"><span class="en">View Certificate</span><span class="es hidden">Ver Certificado</span></a>
+                </article>
+                <article class="cert-card">
+                    <i class="fas fa-leaf" aria-hidden="true"></i>
+                    <h3><span class="en">Certificado Introducción a Spring Framework</span><span class="es hidden">Certificado Introducción a Spring Framework</span></h3>
+                    <p><span class="en">Certificate for Introduction to Spring Framework course.</span><span class="es hidden">Certificado del curso de Introducción a Spring Framework.</span></p>
+                    <a href="https://drive.google.com/file/d/17V_c49qbyEczCSB6Y7ZznzDT1gDP2ztL/view?usp=drive_link" target="_blank" rel="noopener" class="cert-link"><span class="en">View Certificate</span><span class="es hidden">Ver Certificado</span></a>
+                </article>
+                <article class="cert-card">
+                    <i class="fas fa-brain" aria-hidden="true"></i>
+                    <h3><span class="en">Prompt Design in Vertex AI Skill Badge</span><span class="es hidden">Insignia de Habilidad en Diseño de Prompts en Vertex AI</span></h3>
+                    <p><span class="en">Demonstrates expertise in designing effective prompts for Google's Vertex AI platform.</span><span class="es hidden">Demuestra experiencia en el diseño de prompts efectivos para la plataforma Vertex AI de Google.</span></p>
+                    <a href="https://www.credly.com/badges/4af333d6-f368-433b-9234-2abedbc0dad8/public_url" target="_blank" rel="noopener" class="cert-link"><span class="en">View Badge</span><span class="es hidden">Ver Insignia</span></a>
+                </article>
+                <article class="cert-card">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    <h3><span class="en">Python Essentials 1</span><span class="es hidden">Python Essentials 1</span></h3>
+                    <p><span class="en">Covers foundational Python programming concepts and best practices.</span><span class="es hidden">Cubre conceptos fundamentales de programación en Python y mejores prácticas.</span></p>
+                    <a href="https://www.credly.com/badges/a744168f-90fb-4b53-a913-54d9f945d8f6/public_url" target="_blank" rel="noopener" class="cert-link"><span class="en">View Badge</span><span class="es hidden">Ver Insignia</span></a>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Contact section with email link -->
+        <section id="contact" class="contact fade-in">
+            <h2 class="section-title"><span class="en">Contact</span><span class="es hidden">Contacto</span></h2>
+            <p class="contact-text"><span class="en">Send me an email at <a href="mailto:bugheanur@gmail.com">bugheanur@gmail.com</a> for feedback!</span><span class="es hidden">Envíame un correo a <a href="mailto:bugheanur@gmail.com">bugheanur@gmail.com</a> para feedback!</span></p>
+        </section>
+    </main>
+    <!-- Footer with copyright and contact links -->
+    <footer>
+        <p class="footer-text"><span class="en">&copy; 2025 Razvan Andrei Bugheanu. <a href="https://github.com/Khaoss02/portfolis">Source Code</a></span><span class="es hidden">&copy; 2025 Razvan Andrei Bugheanu. <a href="https://github.com/Khaoss02/portfolis">Código Fuente</a></span></p>
+        <div class="footer-links">
+            <a href="https://github.com/Khaoss02" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/andrei-bugheanu-7806231a5/" aria-label="LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:bugheanur@gmail.com" aria-label="Send email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
