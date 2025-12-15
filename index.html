@@ -136,119 +136,92 @@
         </section>
         <!-- Projects section with filtering buttons -->
         <section id="projects" class="projects fade-in">
-            <h2 class="section-title"><span class="en">Projects</span><span class="es hidden">Proyectos</span></h2>
+            <h2 class="section-title">
+                <span class="en">Projects</span>
+                <span class="es hidden">Proyectos</span>
+            </h2>
+
             <div class="filter-buttons">
-                <button class="filter-btn active" onclick="filterProjects('all')" aria-pressed="true"><span class="en">All</span><span class="es hidden">Todos</span></button>
-                <button class="filter-btn" onclick="filterProjects('web')" aria-pressed="false"><span class="en">Web</span><span class="es hidden">Web</span></button>
-                <button class="filter-btn" onclick="filterProjects('mobile')" aria-pressed="false"><span class="en">Mobile</span><span class="es hidden">Móvil</span></button>
+                <button class="filter-btn active" onclick="filterProjects('all')" aria-pressed="true">
+                    <span class="en">All</span>
+                    <span class="es hidden">Todos</span>
+                </button>
+                <button class="filter-btn" onclick="filterProjects('web')" aria-pressed="false">
+                    <span class="en">Web</span>
+                    <span class="es hidden">Web</span>
+                </button>
+                <button class="filter-btn" onclick="filterProjects('mobile')" aria-pressed="false">
+                    <span class="en">Mobile</span>
+                    <span class="es hidden">Móvil</span>
+                </button>
             </div>
-            <div class="grid">
-                <!-- MegaGol (Android) -->
-                <div class="project" data-category="mobile">
-                    <h3 class="project-title"><span class="en">MegaGol</span><span class="es hidden">MegaGol</span></h3>
-                    <p class="project-desc">
-                        <span class="en">Android game for two players: shoot and save penalties.</span>
-                        <span class="es hidden">Juego Android para dos jugadores: lanzar y parar penales.</span>
-                    </p>
-                    <p><strong class="title"><span class="en">Technologies:</span><span class="es hidden">Tecnologías:</span></strong>
-                        <span class="en">Java, Android Studio, AI tools (ChatGPT, Gemini)</span><span class="es hidden">Java, Android Studio, herramientas de IA (ChatGPT, Gemini)</span>
-                    </p>
-                    <a class="project-link" href="https://github.com/Khaoss02/megagol" target="_blank" rel="noopener">
-                        <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
-                    </a>
+
+            <div class="projects-carousel">
+                <!-- Flecha izquierda -->
+                <button class="carousel-btn left" aria-label="Proyecto anterior">
+                    &#10094;
+                </button>
+
+                <!-- Viewport -->
+                <div class="projects-viewport">
+                    <div class="projects-track">
+
+                        <!-- MegaGol (Android) -->
+                        <div class="project" data-category="mobile">
+                            <h3 class="project-title"><span class="en">MegaGol</span><span class="es hidden">MegaGol</span></h3>
+                            <p class="project-desc"><span class="en">Android game for two players: shoot and save penalties.</span><span class="es hidden">Juego Android para dos jugadores: lanzar y parar penales.</span></p>
+                            <p><strong class="title"><span class="en">Technologies:</span><span class="es hidden">Tecnologías:</span></strong> 
+                            <span class="en">Java, Android Studio, AI tools (ChatGPT, Gemini)</span><span class="es hidden">Java, Android Studio, herramientas de IA (ChatGPT, Gemini)</span></p>
+                            <a class="project-link" href="https://github.com/Khaoss02/megagol" target="_blank" rel="noopener">
+                                <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
+                            </a>
+                        </div>
+
+                        <!-- Shopping List (Android) -->
+                        <div class="project" data-category="mobile">
+                            <h3 class="project-title"><span class="en">Shopping List</span><span class="es hidden">Lista de la Compra</span></h3>
+                            <p class="project-desc"><span class="en">Android app to create and manage shopping lists easily.</span><span class="es hidden">App Android para crear y gestionar listas de la compra fácilmente.</span></p>
+                            <p><strong class="title"><span class="en">Technologies:</span><span class="es hidden">Tecnologías:</span></strong> 
+                            <span class="en">Java, Android Studio</span><span class="es hidden">Java, Android Studio</span></p>
+                            <a class="project-link" href="https://github.com/GuillemFdez/LlistaCompra" target="_blank" rel="noopener">
+                                <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
+                            </a>
+                        </div>
+
+                        <!-- Biblioteca Mixta (Android) -->
+                        <div class="project" data-category="mobile">
+                            <h3 class="project-title"><span class="en">Mixed Library</span><span class="es hidden">Biblioteca Mixta</span></h3>
+                            <p class="project-desc"><span class="en">Android application that displays multiple lists (movies, games and books).</span><span class="es hidden">Aplicación Android que muestra múltiples listas (películas, juegos y libros).</span></p>
+                            <p><strong class="title"><span class="en">Technologies:</span><span class="es hidden">Tecnologías:</span></strong> 
+                            <span class="en">Kotlin, Android Studio, JSON</span><span class="es hidden">Kotlin, Android Studio, JSON</span></p>
+                            <a class="project-link" href="https://github.com/Khaoss02/BibliotecaMixta" target="_blank" rel="noopener">
+                                <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
+                            </a>
+                        </div>
+
+                        <!-- Anonymous Coin Clicker (Web) -->
+                        <div class="project" data-category="web">
+                            <h3 class="project-title"><span class="en">Anonymous Coin Clicker</span><span class="es hidden">Clicker de Monedas Anónimo</span></h3>
+                            <p class="project-desc"><span class="en">Web-based clicker game with upgrades, automatic production and persistent progress using localStorage.</span><span class="es hidden">Juego web tipo clicker con mejoras, producción automática y progreso persistente mediante localStorage.</span></p>
+                            <p><strong class="title"><span class="en">Features:</span><span class="es hidden">Características:</span></strong> 
+                            <span class="en">Dynamic upgrades, keyboard support, responsive design</span><span class="es hidden">Mejoras dinámicas, soporte de teclado, diseño responsive</span></p>
+                            <a class="project-link" href="https://anonymousclicker.netlify.app/" target="_blank" rel="noopener">
+                                <span class="en">Live Demo</span><span class="es hidden">Demo en vivo</span>
+                            </a>
+                            <br>
+                            <a class="project-link" href="https://github.com/Khaoss02/anonymous_clicker" target="_blank" rel="noopener">
+                                <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
 
-                <!-- Lista de la Compra (Android) -->
-                <div class="project" data-category="mobile">
-                    <h3 class="project-title"><span class="en">Shopping List</span><span class="es hidden">Lista de la Compra</span></h3>
-                    <p class="project-desc">
-                        <span class="en">Android app to create and manage shopping lists easily.</span>
-                        <span class="es hidden">App Android para crear y gestionar listas de la compra fácilmente.</span>
-                    </p>
-                    <p><strong class="title"><span class="en">Technologies:</span><span class="es hidden">Tecnologías:</span></strong>
-                        <span class="en">Java, Android Studio</span><span class="es hidden">Java, Android Studio</span>
-                    </p>
-                    <a class="project-link" href="https://github.com/GuillemFdez/LlistaCompra" target="_blank" rel="noopener">
-                        <span class="en">View on GitHub</span><span class="es hidden">Ver en GitHub</span>
-                    </a>
-                </div>
-
-                <!-- Biblioteca Mixta (Android) -->
-                <div class="project" data-category="mobile">
-                    <h3 class="project-title">
-                        <span class="en">Mixed Library</span>
-                        <span class="es hidden">Biblioteca Mixta</span>
-                    </h3>
-
-                    <p class="project-desc">
-                        <span class="en">
-                            Android application that displays multiple lists (movies, games and books).
-                        </span>
-                        <span class="es hidden">
-                            Aplicación Android que muestra múltiples listas (películas, juegos y libros).
-                        </span>
-                    </p>
-
-                    <p>
-                        <strong class="title">
-                            <span class="en">Technologies:</span>
-                            <span class="es hidden">Tecnologías:</span>
-                        </strong>
-                        <span class="en">
-                            Kotlin, Android Studio, JSON
-                        </span>
-                        <span class="es hidden">
-                            Kotlin, Android Studio, JSON
-                        </span>
-                    </p>
-
-                    <a class="project-link" href="https://github.com/Khaoss02/BibliotecaMixta" target="_blank" rel="noopener">
-                        <span class="en">View on GitHub</span>
-                        <span class="es hidden">Ver en GitHub</span>
-                    </a>
-                </div>
-
-                <!-- Anonymous Coin Clicker (Web) -->
-                <div class="project" data-category="web">
-                    <h3 class="project-title">
-                        <span class="en">Anonymous Coin Clicker</span>
-                        <span class="es hidden">Clicker de Monedas Anónimo</span>
-                    </h3>
-
-                    <p class="project-desc">
-                        <span class="en">
-                            Web-based clicker game with upgrades, automatic production and persistent progress using localStorage.
-                        </span>
-                        <span class="es hidden">
-                            Juego web tipo clicker con mejoras, producción automática y progreso persistente mediante localStorage.
-                        </span>
-                    </p>
-
-                    <p>
-                        <strong class="title">
-                            <span class="en">Features:</span>
-                            <span class="es hidden">Características:</span>
-                        </strong>
-                        <span class="en">Dynamic upgrades, keyboard support, responsive design</span>
-                        <span class="es hidden">Mejoras dinámicas, soporte de teclado, diseño responsive</span>
-                    </p>
-
-                    <a class="project-link" href="https://anonymousclicker.netlify.app/" target="_blank" rel="noopener">
-                        <span class="en">Live Demo</span>
-                        <span class="es hidden">Demo en vivo</span>
-                    </a>
-
-                    <br>
-
-                    <a class="project-link" href="https://github.com/Khaoss02/anonymous_clicker" target="_blank" rel="noopener">
-                        <span class="en">View on GitHub</span>
-                        <span class="es hidden">Ver en GitHub</span>
-                    </a>
-                </div>                          
-
-
+                <!-- Flecha derecha -->
+                <button class="carousel-btn right" aria-label="Proyecto siguiente">
+                    &#10095;
+                </button>
             </div>
-        </section>
 
         <!-- Formal Education section -->
         <section id="education" class="education fade-in">

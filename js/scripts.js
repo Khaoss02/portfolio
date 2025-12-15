@@ -69,3 +69,74 @@ function changeLanguage(lang) {
 window.onload = function() {
     changeLanguage('en');
 };
+
+// CAROUSEL + FILTRO
+const track = document.querySelector('.projects-track');
+const projects = Array.from(document.querySelectorAll('.project'));
+const prevBtn = document.querySelector('.carousel-btn.left');
+const nextBtn = document.querySelector('.carousel-btn.right');
+let currentIndex = 0;
+
+function updateCarousel() {
+    const projectWidth = projects[0].getBoundingClientRect().width + 32; // + gap
+    track.style.transform = `translateX(-${currentIndex * projectWidth}px)`;
+    
+    // Actualizar botones
+    prevBtn.disabled = currentIndex === 0;
+    nextBtn.disabled = currentIndex >= getVisibleProjectsCount() - getProjectsPerView();
+}
+
+function getVisibleProjectsCount() {
+    return projects.filter(p => !p.classList.contains('hidden-project')).length;
+}
+
+function getProjectsPerView() {
+    const viewportWidth = document.querySelector('.projects-viewport').getBoundingClientRect().width;
+    const projectWidth = projects[0].getBoundingClientRect().width + 32;
+    return Math.floor(viewportWidth / projectWidth);
+}
+
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateCarousel();
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if (currentIndex < getVisibleProjectsCount() - getProjectsPerView()) {
+        currentIndex++;
+        updateCarousel();
+    }
+});
+
+// Filtro actualizado (compatible con carousel)
+function filterProjects(category) {
+    let visibleCount = 0;
+    
+    projects.forEach(project => {
+        const shouldShow = category === 'all' || project.getAttribute('data-category') === category;
+        project.classList.toggle('hidden-project', !shouldShow);
+        if (shouldShow) visibleCount++;
+    });
+
+    // Resetear al inicio al filtrar
+    currentIndex = 0;
+    updateCarousel();
+
+    // Actualizar botones de filtro
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+    });
+    document.querySelector(`.filter-btn[onclick="filterProjects('${category}')"]`)
+        .classList.add('active');
+    document.querySelector(`.filter-btn[onclick="filterProjects('${category}')"]`)
+        .setAttribute('aria-pressed', 'true');
+}
+
+// Inicializar
+window.addEventListener('load', () => {
+    updateCarousel();
+});
+window.addEventListener('resize', updateCarousel);
