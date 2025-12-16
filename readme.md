@@ -20,9 +20,7 @@ Este repositorio contiene el código fuente de mi portfolio personal web, diseñ
 
 Estas son algunas de las herramientas y lenguajes utilizados:
 
-- 📌 HTML
-- 🎨 CSS
-- 💻 JavaScript
-- 📦 Herramientas de build/deployment (Netlify u otras)
-
-
+- HTML
+- CSS
+- JavaScript
+- Herramientas de build/deployment (Netlify u otras)
