@@ -1,6 +1,6 @@
 # Portfolio — Razvan Andrei Bugheanu
 
-Bienvenido al repositorio del **portfolio personal** de Andrei Bugheanu 🧑‍💻  
+Bienvenido al repositorio del **portfolio personal** de Andrei Bugheanu 
 Este sitio muestra mis habilidades, proyectos y experiencia, y está desplegado en https://andreib.netlify.app/
 
 ## Vista en vivo
@@ -24,3 +24,4 @@ Estas son algunas de las herramientas y lenguajes utilizados:
 - CSS
 - JavaScript
 - Herramientas de build/deployment (Netlify u otras)
+
